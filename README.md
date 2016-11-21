@@ -2,6 +2,7 @@
 
 It replaces 2 characters to ONE letter which is the second letter but CAPITAL.
 
+
 *Examples*
 ```js
    "entity_name" => "entityName"
