@@ -1,0 +1,43 @@
+{
+  "name": "babel-camelize",
+  "version": "0.0.1",
+  "description": "Camelize compatible with babel ES7",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "mocha test",
+    "coverage": "istanbul cover _mocha -- --ui bdd -R spec -t 5000;open ./coverage/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdennour/babel-camelize.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-polyfill": "^6.13.0"
+  },
+  "keywords": [
+    "camelize",
+    "babel",
+    "reactjs",
+    "react",
+    "es7",
+    "es6",
+    "replace-underscore-capital",
+    "deep",
+    "nested",
+    "object",
+    "literal-object"
+  ],
+  "author": "Abdennour TOUMI <Abdennour TOUMI>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abdennour/babel-camelize/issues"
+  },
+  "homepage": "https://github.com/abdennour/babel-camelize#readme"
+}
