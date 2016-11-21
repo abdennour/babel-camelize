@@ -2,12 +2,14 @@
 
 # Overview  :
 
-It replaces 2 characters to ONE letter which is the second letter but CAPITAL.
+It replaces 2 characters (the first is `.`, `-` or `__` ) to ONE letter which is the second letter but CAPITAL.
 
 
 *Examples*
 ```js
    "entity_name" => "entityName"
+   "entity.name" => "entityName"
+   "entity-name" => "entityName"    
    {first_name:"Abdou", last_name:"TM"} => {firstName: "Abdou", lastName:"TM"}  
 ```
 
