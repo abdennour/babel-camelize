@@ -52,8 +52,10 @@ function reduce (xs, f, acc) {
     }
     return acc;
 }
+function Camelize(obj) {
+  if (typeof obj === 'string') return camelCase(obj);
+  return walk(obj);
+}
 
-export default function(obj) {
-    if (typeof obj === 'string') return camelCase(obj);
-    return walk(obj);
-};
+export default Camelize;
+export const CamelCase= camelCase;
