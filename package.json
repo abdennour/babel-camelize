@@ -1,6 +1,6 @@
 {
   "name": "babel-camelize",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Camelize compatible with babel ES7",
   "main": "index.js",
   "scripts": {

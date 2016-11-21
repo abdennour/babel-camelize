@@ -39,20 +39,26 @@ describe(`Object Camelize`, () => {
  });
 
  it(`camlizes a so complex object`, () => {
+  const now = new Date();
   const target = {
    fee_fie_foe: 'fum',
    beep_boop: [{
     'abc.xyz': 'mno'
    }, {
-    'foo-bar': 'baz'
+    'foo-bar': 'baz',
+    'date.now': now,
+    'name-regex': /name$/
    }]
   };
   let expected = {
+
    feeFieFoe: 'fum',
    beepBoop: [{
     'abcXyz': 'mno'
    }, {
-    'fooBar': 'baz'
+    'fooBar': 'baz',
+     'dateNow': now,
+     'nameRegex': /name$/
    }]
   };
    expect(Camelize(target)).toEqual(expected);
@@ -60,6 +66,10 @@ describe(`Object Camelize`, () => {
  it(`forwards call to "CamelCase" if input is "string" not object`, () => {
   const target = 'aaa_bbb';
   expect(Camelize(target)).toEqual('aaaBbb');
+ });
+ it(`returns the same object if it is an instance of Date`, () => {
+    const target = new Date();
+    expect(Camelize(target))
  });
 
 });
