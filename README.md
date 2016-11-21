@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/abdennour/babel-camelize.svg?branch=master)](https://travis-ci.org/abdennour/babel-camelize)
+
 # Overview  :
 
 It replaces 2 characters to ONE letter which is the second letter but CAPITAL.
