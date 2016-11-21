@@ -13,10 +13,10 @@ It is compatible with Babel projects (ES7, React.JS,...)
 # Example :
 
 ```js
-import camelize,{camelCase} from 'babel-camelize';
+import Camelize, {CamelCase} from 'babel-camelize';
 //----then---
-camelCase("first_name") //  "firstName"
-camelize({first_name:"A", last_name:"T"}) // {firstName: "A", lastName:"T"}
+CamelCase("first_name") //  "firstName"
+Camelize({first_name:"A", last_name:"T"}) // {firstName: "A", lastName:"T"}
 
 ```
 
